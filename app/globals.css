@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+@custom-variant light (&:where(.light, .light *));
+
+:root {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --card: #1e293b;
+  --muted: #94a3b8;
+  --border: #334155;
+  --glass-bg: rgba(30, 41, 59, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --primary: #6c63ff;
+  --surface-hover: rgba(255, 255, 255, 0.06);
+  color-scheme: dark;
+}
+
+:root.light {
+  --background: #f1f5f9;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --muted: #475569;
+  --border: #cbd5e1;
+  --glass-bg: rgba(255, 255, 255, 0.95);
+  --glass-border: rgba(15, 23, 42, 0.1);
+  --primary: #6c63ff;
+  --surface-hover: rgba(15, 23, 42, 0.06);
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --font-heading: var(--font-poppins), sans-serif;
+  --font-sans: var(--font-inter), sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-poppins), sans-serif;
+  line-height: 1.15;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 80;
+  border-radius: 0.75rem;
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem 1rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.eyebrow {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.headline {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.9px;
+  line-height: 1.05;
+}
+
+.headline-xl {
+  font-size: clamp(2.75rem, 7vw, 3.75rem);
+  letter-spacing: -1.5px;
+}
+
+.gradient-text {
+  background: linear-gradient(105deg, #a9c7ff 0%, #ffb59b 34%, #8fd5b5 67%, #cebaff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+:root.light .gradient-text {
+  background: linear-gradient(105deg, #2458ce 0%, #b13a0b 34%, #1b6b51 67%, #6552a3 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.app-theme {
+  --app: var(--accent-dark);
+}
+
+:root.light .app-theme {
+  --app: var(--accent-light);
+}
+
+.prose-page h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.prose-page h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.prose-page p,
+.prose-page li {
+  color: var(--muted);
+}
+
+.prose-page p {
+  margin-bottom: 1rem;
+}
+
+.prose-page ul,
+.prose-page ol {
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+}
+
+.prose-page ul {
+  list-style: disc;
+}
+
+.prose-page ol {
+  list-style: decimal;
+}
+
+.prose-page li {
+  margin-bottom: 0.4rem;
+}
+
+.prose-page a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose-page strong {
+  color: var(--foreground);
+}
+
+.js .reveal:not(.reveal-in) {
+  opacity: 0;
+  translate: 0 16px;
+}
+
+.reveal {
+  transition: opacity 600ms ease, translate 600ms ease;
+}
+
+.reveal-in {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.ticker-track {
+  animation: ticker 40s linear infinite;
+}
+
+.ticker:hover .ticker-track,
+.ticker:focus-within .ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    translate: 0 16px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.phone-fan-item {
+  animation: rise 700ms ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .ticker-track {
+    animation: none;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.25rem;
+  }
+
+  .ticker-duplicate {
+    display: none;
+  }
+
+  .phone-fan-item,
+  .reveal {
+    animation: none;
+    opacity: 1;
+    translate: none;
+    transition: none;
+  }
+}

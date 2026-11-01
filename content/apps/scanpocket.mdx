@@ -1,0 +1,70 @@
+---
+slug: scanpocket
+name: ScanPocket
+tagline: Documents, text and QR codes
+category: Documents
+status: in-development
+order: 1
+spotlight: false
+accent:
+  light: "#2458CE"
+  dark: "#A9C7FF"
+icon: /apps/scanpocket/icon.svg
+package: com.scanpocket
+version: 1.0.0
+minAndroid: "8.0"
+playUrl: https://play.google.com/store/apps/details?id=com.scanpocket
+testUrl: null
+highlights:
+  - Scan to clean PDFs
+  - QR scan and create
+features:
+  - icon: scan
+    title: Scan to a clean PDF
+    body: Capture a page and keep the PDF in a private library on this phone.
+  - icon: text
+    title: Read the text on a page
+    body: Pull the words off a page without sending the page to a SouMoster account.
+  - icon: qr
+    title: Scan and create QR codes
+    body: Read a code, or make one, and leave it in the same library.
+  - icon: pen
+    title: Sign and edit pages
+    body: Mark a page and sign it, then share the file only if you choose to.
+  - icon: lock
+    title: App lock
+    body: Open the library with the fingerprint or PIN already on the phone.
+  - icon: shield
+    title: A private library
+    body: Documents stay on this phone. There is no account and there are no ads.
+screenshots:
+  - id: lock
+    alt: Illustration of the ScanPocket lock screen, with the blue icon tile and a private-library note
+  - id: library
+    alt: Illustration of a ScanPocket library of scanned documents
+  - id: scan
+    alt: Illustration of a page captured as a clean PDF in ScanPocket
+  - id: qr
+    alt: Illustration of a QR code created in ScanPocket
+privacy:
+  account: false
+  ads: false
+  internet: true
+  storage: On this phone only
+  export: Share a PDF or image from the share sheet
+privacyPolicy: ./scanpocket/privacy.md
+released: null
+faqs:
+  - q: Does ScanPocket need an account?
+    a: No. The library stays on the phone.
+  - q: Why does the app have an internet permission?
+    a: The app itself does not declare one. A Google Play services library in the release build adds it for the on-device scanner. SouMoster does not upload your documents to a server of its own.
+  - q: Can I lock the library?
+    a: Yes. App lock uses the fingerprint or PIN already on the phone.
+---
+
+ScanPocket is the Pocket app for documents, text and QR codes. Scan a page into a PDF, read the words on it, make a QR code, and sign a page.
+
+The library is on the phone. There is no SouMoster account, and there are no ads. Sharing a file uses the Android share sheet, which you start yourself.
+
+The app is still in development, so this page does not offer a Google Play button until a listing is live.
