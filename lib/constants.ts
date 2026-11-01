@@ -1,5 +1,5 @@
 export const SITE_NAME = "SouMoster Apps";
-export const SITE_URL = "https://soumoster-apps.vercel.app";
+export const SITE_URL = "https://soumoster-app.vercel.app";
 export const GAMES_SITE_URL = "https://sou-moster.vercel.app";
 export const PLAY_DEVELOPER_URL =
   "https://play.google.com/store/apps/dev?id=9220341090582575849";
