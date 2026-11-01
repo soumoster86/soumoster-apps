@@ -19,12 +19,10 @@ export function Catalogue({ apps }: { apps: AppRecord[] }) {
   const category: CategoryFilter = isCategory(raw) ? raw : "All";
 
   const counts = useMemo(() => {
-    return {
-      All: apps.length,
-      Documents: apps.filter((app) => app.category === "Documents").length,
-      Media: apps.filter((app) => app.category === "Media").length,
-      Notes: apps.filter((app) => app.category === "Notes").length,
-    };
+    const tally = Object.fromEntries(CATEGORIES.map((item) => [item, 0])) as Record<CategoryFilter, number>;
+    tally.All = apps.length;
+    for (const app of apps) tally[app.category] += 1;
+    return tally;
   }, [apps]);
 
   const shown = category === "All" ? apps : apps.filter((app) => app.category === category);

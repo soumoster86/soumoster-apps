@@ -12,7 +12,7 @@ export function SiteFooter({ apps }: { apps: Pick<AppRecord, "slug" | "name">[] 
             <img src="/logo.svg" alt="" width={40} height={40} className="h-10 w-10 rounded-xl" />
             <p className="font-heading text-lg font-bold">SouMoster Apps</p>
           </div>
-          <p className="mt-3 text-sm text-muted">Offline Android tools. No account. No ads.</p>
+          <p className="mt-3 text-sm text-muted">Android tools. No account. No ads.</p>
           <p className="mt-4 text-sm text-muted">
             <span aria-hidden="true">Designed with ❤️ by SouMoster</span>
             <span className="sr-only">Designed with love by SouMoster</span>

@@ -1,11 +1,11 @@
 const pillars = [
   {
     title: "Private by default",
-    body: "No account. Notes, scans, pages and playlists stay in a library on the phone.",
+    body: "No SouMoster account. Scans, playlists, notes and the ledger stay on the phone.",
   },
   {
     title: "Works offline",
-    body: "Open a PDF, a note or a video without signing in. The work does not go to a SouMoster server.",
+    body: "Open a PDF, a note or a video without signing in. ExpensePocket reaches a database or OpenAI only when you add your own connection or key.",
   },
   {
     title: "Built to last",

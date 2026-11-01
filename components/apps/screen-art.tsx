@@ -53,6 +53,8 @@ export function ScreenArt({ id, app }: { id: string; app: AppRecord }) {
   const titles =
     id === "notes"
       ? ["A note", "A checklist", "A reminder"]
+      : id === "ledger"
+        ? ["An entry", "A budget", "An asset"]
       : id === "reader"
         ? ["The open PDF", "A highlight", "A note in the margin"]
         : id === "scan"

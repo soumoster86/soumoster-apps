@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const app = await getApp(slug);
   if (!app) return {};
-  const description = `${app.name}: ${app.tagline} An offline Android app from SouMoster.`;
+  const description = `${app.name}: ${app.tagline} An Android app from SouMoster, with no account and no ads.`;
   return {
     title: app.name,
     description,

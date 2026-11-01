@@ -6,13 +6,13 @@ export const PLAY_DEVELOPER_URL =
 export const SUPPORT_EMAIL = "soumoster@gmail.com";
 
 export const SITE_DESCRIPTION =
-  "Offline Android tools from SouMoster. ScanPocket, PlayPocket, NotesPocket and ReadPocket — no account and no ads.";
+  "Android tools from SouMoster. ScanPocket, PlayPocket, NotesPocket, ReadPocket and ExpensePocket — no account and no ads.";
 
 export const HERO_EYEBROW = "SouMoster Apps";
 export const HERO_HEADLINE = "Small apps. Big pockets.";
-export const HERO_PROMISE = "Offline Android tools with no account and no ads.";
+export const HERO_PROMISE = "Android tools with no account and no ads.";
 
-export const CATEGORIES = ["All", "Documents", "Media", "Notes"] as const;
+export const CATEGORIES = ["All", "Documents", "Media", "Notes", "Money"] as const;
 export type CategoryFilter = (typeof CATEGORIES)[number];
 
 export const NAV_LINKS = [

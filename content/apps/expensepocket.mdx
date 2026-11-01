@@ -1,0 +1,72 @@
+---
+slug: expensepocket
+name: ExpensePocket
+tagline: Personal Ledger & Wealth Tracker
+category: Money
+status: in-development
+order: 5
+spotlight: false
+accent:
+  light: "#157F55"
+  dark: "#2FB67C"
+icon: /apps/expensepocket/icon.svg
+package: com.soumo.expensetracker
+version: "1.2"
+minAndroid: "8.0"
+playUrl: https://play.google.com/store/apps/details?id=com.soumo.expensetracker
+testUrl: null
+highlights:
+  - Ledger and budgets
+  - Optional bank SMS
+features:
+  - icon: wallet
+    title: Ledger
+    body: Record income, expenses and investments in a library on this phone.
+  - icon: sliders
+    title: Budgets
+    body: Set a limit for a category and see when the month is getting close.
+  - icon: bell
+    title: Bill reminders
+    body: A due date is a notification on the phone. It does not need an account.
+  - icon: chart
+    title: Wealth
+    body: Keep a month's assets and liabilities next to the ledger.
+  - icon: sms
+    title: Bank messages
+    body: If you turn it on, a bank SMS can become a suggestion. The lock-screen notice hides the amount and the name.
+  - icon: lock
+    title: App lock
+    body: Open the ledger with the fingerprint or PIN already on the phone.
+screenshots:
+  - id: lock
+    alt: Illustration of the ExpensePocket lock screen, with the green wallet tile
+  - id: ledger
+    alt: Illustration of an ExpensePocket list of entries, budgets and assets
+  - id: ledger
+    alt: Illustration of ExpensePocket budgets for the month
+  - id: ledger
+    alt: Illustration of ExpensePocket wealth figures stored on the phone
+privacy:
+  account: false
+  ads: false
+  internet: true
+  storage: On this phone, unless you add your own database
+  export: A database file you share from the phone
+privacyPolicy: ./expensepocket/privacy.md
+released: null
+faqs:
+  - q: Does ExpensePocket need an account?
+    a: No. There is no SouMoster account. The ledger stays on this phone until you paste a database connection of your own.
+  - q: Does it read my text messages?
+    a: Only if you turn bank SMS on. A message becomes a suggestion on the phone, and you choose whether to save it. The lock-screen alert does not show the amount or the name.
+  - q: Where does sync go?
+    a: To the database in the Neon connection string you paste. Sync runs when the app opens and after you leave it with a change. The string stays in the app's private settings and is left out of Android cloud backup.
+  - q: Does the assistant see my ledger?
+    a: Only if you add an OpenAI key. That key is used to fill an entry from a sentence, to write the month on Insights, and for Ask your data. The request goes to OpenAI. SouMoster does not receive the key.
+---
+
+ExpensePocket is a personal ledger and wealth tracker. Income, expenses, investments, budgets, bill reminders and a month's assets stay on the phone.
+
+There is no SouMoster account and there are no ads. A short line such as "Tea 40" is read on the phone. If you paste a Neon connection string, the ledger can sync to that database. If you paste an OpenAI key, you can ask questions about your numbers. Both stay off until you add them.
+
+The app is still in development, so there is no Play button on this page yet.

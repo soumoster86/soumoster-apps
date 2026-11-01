@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { FEATURE_ICONS } from "@/lib/icons";
 
-export const CATEGORY_VALUES = ["Documents", "Media", "Notes"] as const;
+export const CATEGORY_VALUES = ["Documents", "Media", "Notes", "Money"] as const;
 export const STATUS_VALUES = ["live", "closed-test", "in-development", "coming-soon"] as const;
 
 const accentSchema = z.object({
