@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppCard } from "@/components/apps/app-card";
@@ -41,6 +42,7 @@ export default async function AppDetailPage({ params }: { params: Promise<{ slug
 
   const others = (await getApps()).filter((item) => item.slug !== app.slug);
   const store = storeLink(app);
+  const heroShot = app.screenshots.find((shot) => shot.src);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -86,7 +88,11 @@ export default async function AppDetailPage({ params }: { params: Promise<{ slug
           </div>
           <div className="mx-auto" aria-hidden="true">
             <PhoneFrame size="lg">
-              <LockScreen app={app} />
+              {heroShot?.src ? (
+                <Image src={heroShot.src} alt="" fill priority className="object-cover" sizes="260px" />
+              ) : (
+                <LockScreen app={app} />
+              )}
             </PhoneFrame>
           </div>
         </div>
