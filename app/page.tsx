@@ -37,7 +37,7 @@ export default async function HomePage() {
             The Pocket family
           </h2>
           <p className="mt-3 max-w-2xl text-muted">
-            Five pocket tools, each with its own accent. Filter by what they hold.
+            Six pocket tools, each with its own accent. Filter by what they hold.
           </p>
           <div className="mt-8">
             <Suspense fallback={<p className="text-muted">Loading the catalogue…</p>}>

@@ -1,0 +1,72 @@
+---
+slug: filepocket
+name: FilePocket
+tagline: Browse, open, move and clean every file
+category: Files
+status: in-development
+order: 6
+spotlight: false
+accent:
+  light: "#7B5800"
+  dark: "#F0C05A"
+icon: /apps/filepocket/icon.svg
+package: com.filepocket
+version: 0.1.0
+minAndroid: "8.0"
+playUrl: https://play.google.com/store/apps/details?id=com.filepocket
+testUrl: null
+highlights:
+  - Safe copy and move
+  - Trash and cleaner
+features:
+  - icon: folder
+    title: All your storage
+    body: Phone storage, SD cards and USB drives sit in one place. Search for a file by any part of its name.
+  - icon: text
+    title: Open it here
+    body: PDFs, photos, text, code, JSON, XML, CSV and Markdown open in the app. ZIP files browse like folders.
+  - icon: shield
+    title: Safe moves
+    body: A copy takes its real name only once it is complete and checked. A move removes the original only after that.
+  - icon: trash
+    title: Cleaner and trash
+    body: See what takes up room and review duplicates and large old files. Deleted files go to a trash you can restore from.
+  - icon: drive
+    title: Network drives
+    body: Copy files to and from a server you add, over SMB, SFTP, FTP or FTPS.
+  - icon: lock
+    title: App lock
+    body: Open the app with your fingerprint, screen lock or a PIN. Password-protect archives with AES-256.
+screenshots:
+  - src: /apps/filepocket/screens/home.webp
+    alt: FilePocket home screen with internal storage, file categories and search
+  - src: /apps/filepocket/screens/documents.webp
+    alt: A FilePocket Documents folder with subfolders, PDFs and a JSON file
+  - src: /apps/filepocket/screens/storage.webp
+    alt: FilePocket storage analysis showing space used by file type and by folder
+  - src: /apps/filepocket/screens/cleaner.webp
+    alt: The FilePocket cleaner listing duplicate files to review before they move to the trash
+privacy:
+  account: false
+  ads: false
+  internet: true
+  storage: On this phone, unless you copy to a network drive of your own
+  export: Your files stay ordinary files. Share one or copy it to a drive
+privacyPolicy: ./filepocket/privacy.md
+released: null
+faqs:
+  - q: Why does FilePocket ask for All files access?
+    a: A file manager has to see your files to manage them, and Android requires this permission for that. If you decline, you can pick individual folders instead. The trash, device-wide search and the cleaner need the full permission.
+  - q: Does FilePocket need an account?
+    a: No. There is no account, no ads and no analytics. SouMoster never receives your files, their names or your activity.
+  - q: Why does it have the internet permission?
+    a: Only for network drives you add yourself. It connects to nothing else. Your files and login go directly between your phone and the server you chose.
+  - q: What happens if the phone restarts during a copy?
+    a: The job carries on from its first unfinished item. A password-protected job fails instead, because the password is never written down.
+---
+
+FilePocket is a file manager for all of your phone's storage: internal, SD card and USB drives, in one place. Find a file, open it without leaving the app, and keep things tidy.
+
+There is no account and there are no ads. Your files stay on the phone unless you share them or copy them to a network drive you added. Audio and video open in PlayPocket, PDFs can go to ReadPocket, and text can be saved as a note in NotesPocket.
+
+The app is still in development, so there is no Play button on this page yet.
