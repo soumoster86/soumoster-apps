@@ -33,11 +33,11 @@ features:
     title: Merge PDFs
     body: Join files into one PDF and keep the result in the library.
   - icon: backup
-    title: Encrypted backups
-    body: Back up to an encrypted file you keep. The backup is not a SouMoster account.
-  - icon: lock
-    title: App lock
-    body: Cover the library with the fingerprint or PIN already on the phone.
+    title: Encrypted backups and app lock
+    body: Back up to an encrypted file you keep, not a SouMoster account. Cover the library with the fingerprint or PIN already on the phone.
+  - icon: ai
+    title: Optional AI, with your own key
+    body: Add an OpenAI key to summarise a PDF, ask about it, or explain and translate a passage. Off until you do, and only the text needed is sent, never the file.
 screenshots:
   - src: /apps/readpocket/screens/home.webp
     alt: ReadPocket home screen with Open PDF, Add a folder and recently added PDFs
@@ -50,14 +50,18 @@ screenshots:
 privacy:
   account: false
   ads: false
-  internet: false
-  storage: On this phone only
+  internet: true
+  storage: On this phone, unless you use AI with your own key
   export: Encrypted backup file
 privacyPolicy: ./readpocket/privacy.md
 released: null
 faqs:
   - q: Does ReadPocket upload my PDFs?
-    a: No. Files, reading position, highlights and notes stay on this phone.
+    a: No. Files, reading position, highlights and notes stay on this phone. If you add your own OpenAI key and tap an AI action, the text involved goes to OpenAI, but never the PDF file.
+  - q: Does ReadPocket use AI?
+    a: Only if you add your own OpenAI key in Settings. You can then summarise a page or a PDF, ask about it, or explain or translate selected text. Each time, only the text needed goes to OpenAI. SouMoster does not receive the key or the text.
+  - q: Why does the app have an internet permission?
+    a: Only for those optional AI features. Without a key, ReadPocket does not connect to anything.
   - q: What is the backup?
     a: An encrypted file you keep. It is not an account in the cloud.
   - q: Can another app send a PDF in?
@@ -66,6 +70,6 @@ faqs:
 
 ReadPocket is for reading, marking up and signing PDFs. A file reopens on the page you left, and highlights and notes stay beside it.
 
-You can fill a form, merge PDFs, and write an encrypted backup that you keep. There is no account and there are no ads.
+You can fill a form, merge PDFs, and write an encrypted backup that you keep. There is no account and there are no ads. If you add your own OpenAI key, you can also summarise a PDF or ask about it. That stays off until you do.
 
 Version 0.1.0 is still in development. This page will gain a Play button when a listing exists.

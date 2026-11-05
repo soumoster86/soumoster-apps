@@ -21,8 +21,8 @@ highlights:
   - Labels and reminders
 features:
   - icon: text
-    title: Notes
-    body: Write a note and keep it in a library on this phone.
+    title: Notes and images
+    body: Write a note and keep it in a library on this phone. Attach a picture and the file stays with the note.
   - icon: checklist
     title: Checklists
     body: Tick items off without an account behind the list.
@@ -32,9 +32,9 @@ features:
   - icon: bell
     title: Reminders
     body: A reminder is an alarm on the phone. It can notify you, and it does not need a cloud account.
-  - icon: image
-    title: Images
-    body: Attach a picture to a note. The file stays with the note.
+  - icon: ai
+    title: Optional AI, with your own key
+    body: Add an OpenAI key to summarise or rewrite a note, fix its spelling or turn it into a checklist. Off until you do, and only that note's words are sent.
   - icon: lock
     title: App lock
     body: Open your notes with the fingerprint or PIN already on the phone.
@@ -48,14 +48,18 @@ screenshots:
 privacy:
   account: false
   ads: false
-  internet: false
-  storage: On this phone only
+  internet: true
+  storage: On this phone, unless you use AI with your own key
   export: Notes stay on this phone
 privacyPolicy: ./notespocket/privacy.md
 released: null
 faqs:
   - q: Do notes sync to an account?
     a: No. Notes, checklists, labels, reminders and images stay on this phone.
+  - q: Does NotesPocket use AI?
+    a: Only if you add your own OpenAI key in Settings. You can then summarise or rewrite a note, fix its spelling, turn it into a checklist or get a suggested title. Each time you tap one of these, that note's words go to OpenAI. Its images and your other notes do not. SouMoster does not receive the key or the text.
+  - q: Why does the app have an internet permission?
+    a: Only for those optional AI features. Without a key, NotesPocket does not connect to anything.
   - q: How do reminders work?
     a: They are alarms on the device. NotesPocket can ask to post notifications and to reschedule alarms after a restart.
   - q: Can I lock the app?
@@ -64,6 +68,6 @@ faqs:
 
 NotesPocket holds notes, checklists and reminders on the phone. Labels and pictures stay with the notes they belong to.
 
-There is no account and there are no ads. Reminders are local alarms, not messages sent through a SouMoster server.
+There is no account and there are no ads. Reminders are local alarms, not messages sent through a SouMoster server. If you add your own OpenAI key, you can also summarise or tidy up a note. That stays off until you do.
 
 The app is still in development, so there is no Play button on this page yet.

@@ -10,7 +10,7 @@ If you allow it, FilePocket can read and change the files in your phone's shared
 
 ## What stays on the phone
 
-Your files stay where they are. To search quickly, FilePocket keeps a list of file names, sizes, dates and folders in its private storage, but never what's inside your files. Favourites, recently opened files, your place in each file, thumbnails and preferences are also stored on the device. SouMoster does not offer an account, and the app does not show ads, use analytics or send crash reports. SouMoster never receives your files, their names or your activity.
+Your files stay where they are. To search quickly, FilePocket keeps a list of file names, sizes, dates and folders in its private storage, but never what's inside your files. Favourites, recently opened files, your place in each file, thumbnails and preferences are also stored on the device. SouMoster does not offer an account, and the app does not show ads, use analytics or send crash reports. SouMoster never receives your files, their names or your activity. If you use the AI features below, the text involved goes to OpenAI.
 
 ## Trash
 
@@ -18,11 +18,15 @@ Files you delete move to a hidden folder on the same storage and are permanently
 
 ## Network drives
 
-The app has the internet permission only for network drives you add yourself, and it connects to nothing else. When you copy to or from a drive, your files and login go directly between your phone and the server you chose, over SMB, SFTP, FTP or FTPS. Plain FTP is not encrypted, and FilePocket warns you when you choose it. What happens on your server is up to whoever runs it. Each drive's password is encrypted with a key held in Android's Keystore.
+The app has the internet permission for network drives you add yourself and for the optional AI features below, and it connects to nothing else. When you copy to or from a drive, your files and login go directly between your phone and the server you chose, over SMB, SFTP, FTP or FTPS. Plain FTP is not encrypted, and FilePocket warns you when you choose it. What happens on your server is up to whoever runs it. Each drive's password is encrypted with a key held in Android's Keystore.
+
+## AI features
+
+AI features are optional and stay off until you paste your own OpenAI API key in Settings. The key is encrypted on the phone, is sent only to OpenAI, and is left out of Android backups and device-to-device transfer. When you tap Summarise or Explain on an open text file, that file's text and type, such as .csv, go to OpenAI, up to a limit. When you describe a search, only the words you typed go. File names, locations, the search index and your other files do not, and the search itself runs on the phone. Nothing is sent automatically or in the background. The text goes directly from your phone to OpenAI over an encrypted connection, and OpenAI handles it under its own terms and privacy policy. Usage is billed to your OpenAI account. SouMoster never receives your key or the text. To stop, remove the key in Settings.
 
 ## Sharing and other apps
 
-A file leaves FilePocket only when you share it or open it in another app, such as PlayPocket, ReadPocket or NotesPocket. That app gets access to that file only, and handles it under its own privacy policy. FilePocket never runs the files it shows you.
+Apart from network drives and AI actions, a file leaves FilePocket only when you share it or open it in another app, such as PlayPocket, ReadPocket or NotesPocket. That app gets access to that file only, and handles it under its own privacy policy. FilePocket never runs the files it shows you.
 
 ## App lock
 
@@ -30,7 +34,7 @@ If you turn app lock on, FilePocket asks the phone to check your fingerprint, fa
 
 ## Backups and deleting your data
 
-Your search index, history, trash records and drive passwords are left out of Android backups and device-to-device transfer. Preferences may move with Android's backup, including the hash of an app PIN if you use one. To remove the app's own data, use Android Settings → Apps → FilePocket → Storage → Clear storage. SouMoster holds no FilePocket data, so there is nothing to request from us.
+Your search index, history, trash records, drive passwords and OpenAI key are left out of Android backups and device-to-device transfer. Preferences may move with Android's backup, including the hash of an app PIN if you use one. To remove the app's own data, use Android Settings → Apps → FilePocket → Storage → Clear storage. SouMoster holds no FilePocket data, so there is nothing to request from us.
 
 ## Contact
 

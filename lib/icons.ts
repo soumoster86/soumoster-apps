@@ -20,6 +20,7 @@ import {
   ScanLine,
   Shield,
   SlidersHorizontal,
+  Sparkles,
   Tag,
   Trash2,
   Wallet,
@@ -54,6 +55,7 @@ export const FEATURE_ICONS = {
   form: PenLine,
   merge: Files,
   backup: KeyRound,
+  ai: Sparkles,
 } as const satisfies Record<string, LucideIcon>;
 
 export type FeatureIconName = keyof typeof FEATURE_ICONS;

@@ -27,17 +27,17 @@ features:
     title: Open it here
     body: PDFs, photos, text, code, JSON, XML, CSV and Markdown open in the app. ZIP files browse like folders.
   - icon: shield
-    title: Safe moves
-    body: A copy takes its real name only once it is complete and checked. A move removes the original only after that.
+    title: Safe moves and app lock
+    body: A copy takes its real name only once it is checked, and a move removes the original only after that. Lock the app with your fingerprint, screen lock or a PIN, and password-protect archives with AES-256.
   - icon: trash
     title: Cleaner and trash
     body: See what takes up room and review duplicates and large old files. Deleted files go to a trash you can restore from.
   - icon: drive
     title: Network drives
     body: Copy files to and from a server you add, over SMB, SFTP, FTP or FTPS.
-  - icon: lock
-    title: App lock
-    body: Open the app with your fingerprint, screen lock or a PIN. Password-protect archives with AES-256.
+  - icon: ai
+    title: Optional AI, with your own key
+    body: Add an OpenAI key to summarise or explain a text file, or describe a search in plain words. Off until you do, and file names are never sent.
 screenshots:
   - src: /apps/filepocket/screens/home.webp
     alt: FilePocket home screen with internal storage, file categories and search
@@ -51,7 +51,7 @@ privacy:
   account: false
   ads: false
   internet: true
-  storage: On this phone, unless you copy to a network drive of your own
+  storage: On this phone, unless you copy to a network drive of your own or use AI with your own key
   export: Your files stay ordinary files. Share one or copy it to a drive
 privacyPolicy: ./filepocket/privacy.md
 released: null
@@ -61,13 +61,15 @@ faqs:
   - q: Does FilePocket need an account?
     a: No. There is no account, no ads and no analytics. SouMoster never receives your files, their names or your activity.
   - q: Why does it have the internet permission?
-    a: Only for network drives you add yourself. It connects to nothing else. Your files and login go directly between your phone and the server you chose.
+    a: For network drives you add yourself, and for optional AI features if you add your own OpenAI key. It connects to nothing else. Your files and login go directly between your phone and the server you chose.
+  - q: Does FilePocket use AI?
+    a: Only if you add your own OpenAI key in Settings. You can then summarise or explain a text file, or describe a search in plain words. Each time, only the open file's text and type, or the words you typed, go to OpenAI. File names and your other files do not. SouMoster does not receive the key or the text.
   - q: What happens if the phone restarts during a copy?
     a: The job carries on from its first unfinished item. A password-protected job fails instead, because the password is never written down.
 ---
 
 FilePocket is a file manager for all of your phone's storage: internal, SD card and USB drives, in one place. Find a file, open it without leaving the app, and keep things tidy.
 
-There is no account and there are no ads. Your files stay on the phone unless you share them or copy them to a network drive you added. Audio and video open in PlayPocket, PDFs can go to ReadPocket, and text can be saved as a note in NotesPocket.
+There is no account and there are no ads. Your files stay on the phone unless you share them, copy them to a network drive you added, or tap an AI action after adding your own OpenAI key. Audio and video open in PlayPocket, PDFs can go to ReadPocket, and text can be saved as a note in NotesPocket.
 
 The app is still in development, so there is no Play button on this page yet.

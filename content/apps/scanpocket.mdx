@@ -32,12 +32,12 @@ features:
   - icon: pen
     title: Sign and edit pages
     body: Mark a page and sign it, then share the file only if you choose to.
-  - icon: lock
-    title: App lock
-    body: Open the library with the fingerprint or PIN already on the phone.
   - icon: shield
     title: A private library
-    body: Documents stay on this phone. There is no account and there are no ads.
+    body: Documents stay on this phone, with no account and no ads. Lock the library with the fingerprint or PIN already on the phone.
+  - icon: ai
+    title: Optional AI, with your own key
+    body: Add an OpenAI key to summarise a scan, find its key details or get a suggested name. Off until you do, and only recognised text is sent.
 screenshots:
   - src: /apps/scanpocket/screens/home.webp
     alt: ScanPocket home screen with Scan Document, Scan QR and Create QR code
@@ -51,7 +51,7 @@ privacy:
   account: false
   ads: false
   internet: true
-  storage: On this phone only
+  storage: On this phone, unless you use AI with your own key
   export: Share a PDF or image from the share sheet
 privacyPolicy: ./scanpocket/privacy.md
 released: null
@@ -59,13 +59,15 @@ faqs:
   - q: Does ScanPocket need an account?
     a: No. The library stays on the phone.
   - q: Why does the app have an internet permission?
-    a: The app itself does not declare one. A Google Play services library in the release build adds it for the on-device scanner. SouMoster does not upload your documents to a server of its own.
+    a: For optional AI features, if you add your own OpenAI key. A Google Play services library also adds it for the on-device scanner. SouMoster does not upload your documents to a server of its own.
+  - q: Does ScanPocket use AI?
+    a: Only if you add your own OpenAI key in Settings. You can then summarise a scan, find its key details or get a suggested name. Each time you tap one of these, the scan's recognised text goes to OpenAI. Page images do not. SouMoster does not receive the key or the text.
   - q: Can I lock the library?
     a: Yes. App lock uses the fingerprint or PIN already on the phone.
 ---
 
 ScanPocket is the Pocket app for documents, text and QR codes. Scan a page into a PDF, read the words on it, make a QR code, and sign a page.
 
-The library is on the phone. There is no SouMoster account, and there are no ads. Sharing a file uses the Android share sheet, which you start yourself.
+The library is on the phone. There is no SouMoster account, and there are no ads. Sharing a file uses the Android share sheet, which you start yourself. If you add your own OpenAI key, you can also summarise a scan or find its key details. That stays off until you do.
 
 The app is still in development, so this page does not offer a Google Play button until a listing is live.
