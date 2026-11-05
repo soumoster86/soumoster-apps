@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { LockScreen } from "@/components/apps/lock-screen";
 import { PhoneFrame } from "@/components/apps/phone-frame";
@@ -8,6 +9,7 @@ import { appThemeStyle, formatAndroid, storeLink } from "@/lib/utils";
 
 export function Spotlight({ app }: { app: AppRecord }) {
   const store = storeLink(app);
+  const shot = app.screenshots.find((item) => item.src);
   const kicker = app.status === "closed-test" ? "Now in testing" : "Newest app";
   const facts = [
     app.category,
@@ -49,7 +51,11 @@ export function Spotlight({ app }: { app: AppRecord }) {
         </div>
         <div className="mx-auto" aria-hidden="true">
           <PhoneFrame size="sm">
-            <LockScreen app={app} compact />
+            {shot?.src ? (
+              <Image src={shot.src} alt="" fill className="object-cover" sizes="180px" />
+            ) : (
+              <LockScreen app={app} compact />
+            )}
           </PhoneFrame>
         </div>
       </div>
