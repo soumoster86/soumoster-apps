@@ -5,7 +5,7 @@ import { AppTicker } from "@/components/home/app-ticker";
 import { Hero } from "@/components/home/hero";
 import { Pillars } from "@/components/home/pillars";
 import { Spotlight } from "@/components/home/spotlight";
-import { StatStrip } from "@/components/home/stat-strip";
+import { TaskFinder } from "@/components/home/task-finder";
 import { Reveal } from "@/components/shared/reveal";
 import { getApps } from "@/lib/content";
 
@@ -16,21 +16,14 @@ export const metadata: Metadata = {
 export default async function HomePage() {
   const apps = await getApps();
   const spotlight = apps.find((app) => app.spotlight) ?? null;
-  const live = apps.filter((app) => app.status === "live").length;
-  const testing = apps.filter((app) => app.status === "closed-test").length;
 
   return (
     <>
       <Hero apps={apps} />
       <AppTicker apps={apps} />
-      <StatStrip
-        stats={[
-          { label: "Apps live", value: live },
-          { label: "Apps in testing", value: testing },
-          { label: "Accounts needed", value: 0 },
-          { label: "Ads", value: 0 },
-        ]}
-      />
+      <Reveal>
+        <TaskFinder apps={apps} />
+      </Reveal>
       <Reveal>
         <section id="pocket-family" className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8" aria-labelledby="family-title">
           <h2 id="family-title" className="headline text-3xl sm:text-4xl">

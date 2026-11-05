@@ -45,6 +45,7 @@ export const appSchema = z
     slug: z.string().regex(/^[a-z0-9-]+$/),
     name: z.string().min(1),
     tagline: z.string().min(1),
+    job: z.string().optional(),
     category: z.enum(CATEGORY_VALUES),
     status: z.enum(STATUS_VALUES),
     order: z.number().int(),
@@ -68,6 +69,7 @@ export const appSchema = z
     if (app.status === "coming-soon") return;
 
     const required: (keyof typeof app)[] = [
+      "job",
       "accent",
       "icon",
       "package",
