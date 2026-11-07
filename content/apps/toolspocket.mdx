@@ -1,0 +1,79 @@
+---
+slug: toolspocket
+name: ToolsPocket
+tagline: Measure, calculate, convert and read your phone's sensors
+job: Measure, calculate or convert something
+category: Tools
+status: in-development
+order: 7
+spotlight: true
+accent:
+  light: "#00687A"
+  dark: "#7FD3E6"
+icon: /apps/toolspocket/icon.svg
+package: com.toolspocket
+version: 0.1.0
+minAndroid: "8.0"
+playUrl: https://play.google.com/store/apps/details?id=com.toolspocket
+testUrl: null
+highlights:
+  - 44 everyday tools
+  - Exact decimal maths
+features:
+  - icon: ruler
+    title: Measure
+    body: Bubble level, inclinometer, ruler, protractor, plumb line, height finder and magnifier, plus a stopwatch, timers and a metronome.
+  - icon: calculator
+    title: Calculate exactly
+    body: A calculator with a saved tape, plus percentages, discounts, GST and VAT, loan EMI, SIP, dates, fuel, statistics and fractions. Exact decimals, so 0.1 + 0.2 is 0.3.
+  - icon: convert
+    title: Convert
+    body: 18 unit categories, including bigha, katha and gaj by state. Currency that keeps working offline, number bases, Roman numerals, time zones and clothing sizes.
+  - icon: gauge
+    title: Read your sensors
+    body: Compass, motion graphs, metal detector, vibration, light and sound meters, barometer, GPS speedometer, pedometer and battery. Each shows how sure it is and how far to trust it.
+  - icon: ar
+    title: AR tape measure
+    body: Distances, paths and areas on real surfaces, with a photo of the measurements. On phones that support ARCore; on others, the tool stays hidden.
+  - icon: ai
+    title: Optional AI, with your own key
+    body: Add an OpenAI key to find a tool by describing what you need, describe a sum, ask for a conversion in words, or get a reading explained. Off until you do, and the sums are still worked out on your phone.
+screenshots:
+  - src: /apps/toolspocket/screens/home.webp
+    alt: ToolsPocket home screen with search, favourites, recent tools and the Measure tools
+  - src: /apps/toolspocket/screens/calculator.webp
+    alt: The ToolsPocket calculator working out a sum with its keypad
+  - src: /apps/toolspocket/screens/compass.webp
+    alt: The ToolsPocket compass with its dial, bearing lock and sensor accuracy
+  - src: /apps/toolspocket/screens/units.webp
+    alt: The ToolsPocket unit converter showing metres in feet and every other length unit
+privacy:
+  account: false
+  ads: false
+  internet: true
+  storage: On this phone, unless you share something or use AI with your own key
+  export: Share a result, export readings as CSV, or back up to a file you keep
+privacyPolicy: ./toolspocket/privacy.md
+released: null
+faqs:
+  - q: Does ToolsPocket need an account?
+    a: No. There is no account, no ads and no analytics. Your readings stay on your phone, and SouMoster never receives them.
+  - q: Why does it have the internet permission?
+    a: To fetch public exchange rates for the currency converter, which sends nothing about you, and for optional AI features if you add your own OpenAI key. Google's ARCore, which the AR tape measure runs on, may also go online. Every other tool works with no network.
+  - q: What does the AR tape measure mean for my privacy?
+    a: This application runs on Google Play Services for AR (ARCore), which is provided by Google and governed by the Google Privacy Policy. Google says ARCore collects diagnostics, how its features are used, and an account or device identifier. ToolsPocket doesn't use the ARCore features that send camera video or precise location to Google, and SouMoster receives none of this.
+  - q: Does ToolsPocket use AI?
+    a: Only if you add your own OpenAI key in Settings. Finding a tool, describing a sum or asking for a conversion sends the words you typed, along with the list of tools or units to choose from. Explain with AI sends the tool's name and the number on screen. Your location, history and other readings do not go. SouMoster does not receive the key or the text.
+  - q: How accurate are the sensor tools?
+    a: Phone sensors vary, so readings are indicative rather than certified. Each sensor tool shows how sure it is, and calibration helps with the level, ruler and sound meter. Don't use them for anything safety-critical, legal or medical. Finance tools give estimates, not financial advice, and BMI is for information only.
+  - q: Does the sound meter record me?
+    a: No. It measures loudness in memory and discards the audio at once. Nothing is recorded, stored or sent.
+  - q: Why can't I see some of the tools?
+    a: Tools that need hardware your phone doesn't have are hidden, and listed on Home with what's missing. A phone without a barometer has no altimeter, for example.
+---
+
+ToolsPocket puts 44 everyday tools in one app, so you can stop installing a separate one for each. It's the utility drawer of the Pocket family: measure something or work something out, quickly, with most tools working with no network at all.
+
+There is no account and there are no ads, and camera, microphone and location are only asked for when you open a tool that needs them. Your readings stay on the phone unless you share them or tap an AI action after adding your own OpenAI key. You can save a result as a note in NotesPocket, or send an AR photo to FilePocket.
+
+The app is still in development, so there is no Play button on this page yet.

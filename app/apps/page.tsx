@@ -5,7 +5,7 @@ import { getApps } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "All apps",
-  description: "Every SouMoster Pocket app: documents, media, notes, money and files, with no account and no ads.",
+  description: "Every SouMoster Pocket app: documents, media, notes, money, files and everyday tools, with no account and no ads.",
   alternates: { canonical: "/apps" },
 };
 

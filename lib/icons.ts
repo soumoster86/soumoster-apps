@@ -1,11 +1,15 @@
 import {
+  ArrowLeftRight,
   AudioLines,
   Bell,
   Bookmark,
+  Box,
+  Calculator,
   Captions,
   Files,
   FileText,
   Folder,
+  Gauge,
   HardDrive,
   Highlighter,
   Image as ImageIcon,
@@ -17,6 +21,7 @@ import {
   PieChart,
   PenLine,
   QrCode,
+  Ruler,
   ScanLine,
   Shield,
   SlidersHorizontal,
@@ -56,6 +61,11 @@ export const FEATURE_ICONS = {
   merge: Files,
   backup: KeyRound,
   ai: Sparkles,
+  ruler: Ruler,
+  calculator: Calculator,
+  convert: ArrowLeftRight,
+  gauge: Gauge,
+  ar: Box,
 } as const satisfies Record<string, LucideIcon>;
 
 export type FeatureIconName = keyof typeof FEATURE_ICONS;
