@@ -1,11 +1,11 @@
 const pillars = [
   {
     title: "Private by default",
-    body: "No SouMoster account. Scans, playlists, notes, the ledger, your files and your readings stay on the phone.",
+    body: "No SouMoster account. Scans, playlists, notes, the ledger, your files, your readings and your browsing stay on the phone.",
   },
   {
     title: "Works offline",
-    body: "Open a PDF, a note or a video without signing in. ExpensePocket reaches a database or OpenAI only when you add your own connection or key, and FilePocket reaches only the network drives you add. ToolsPocket fetches public currency rates, and its AR tool runs on Google's ARCore.",
+    body: "Open a PDF, a note or a video without signing in. ExpensePocket reaches a database or OpenAI only when you add your own connection or key, and FilePocket reaches only the network drives you add. ToolsPocket fetches public currency rates, and its AR tool runs on Google's ARCore. BrowsePocket can save pages to read offline.",
   },
   {
     title: "Built to last",

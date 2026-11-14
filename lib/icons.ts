@@ -3,6 +3,7 @@ import {
   AudioLines,
   Bell,
   Bookmark,
+  BookOpen,
   Box,
   Calculator,
   Captions,
@@ -14,6 +15,7 @@ import {
   Highlighter,
   Image as ImageIcon,
   KeyRound,
+  Layers,
   ListChecks,
   ListMusic,
   Lock,
@@ -28,6 +30,7 @@ import {
   Sparkles,
   Tag,
   Trash2,
+  VenetianMask,
   Wallet,
   WifiOff,
   type LucideIcon,
@@ -66,6 +69,9 @@ export const FEATURE_ICONS = {
   convert: ArrowLeftRight,
   gauge: Gauge,
   ar: Box,
+  mask: VenetianMask,
+  tabs: Layers,
+  reader: BookOpen,
 } as const satisfies Record<string, LucideIcon>;
 
 export type FeatureIconName = keyof typeof FEATURE_ICONS;

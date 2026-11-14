@@ -1,0 +1,79 @@
+---
+slug: browsepocket
+name: BrowsePocket
+tagline: A private web browser that blocks ads and trackers
+job: Browse the web privately
+category: Web
+status: in-development
+order: 8
+spotlight: true
+accent:
+  light: "#9C3A66"
+  dark: "#FFB0CC"
+icon: /apps/browsepocket/icon.svg
+package: com.browsepocket
+version: 0.1.0
+minAndroid: "10"
+playUrl: https://play.google.com/store/apps/details?id=com.browsepocket
+testUrl: null
+highlights:
+  - Ads and trackers blocked
+  - Private tabs
+features:
+  - icon: shield
+    title: Blocks ads and trackers
+    body: Built-in blocking from EasyList and EasyPrivacy, cookie banners hidden without accepting them, HTTPS-only mode, third-party cookies off and Global Privacy Control sent. Turn blocking off for one site from the shield.
+  - icon: mask
+    title: Private tabs that leave nothing
+    body: Private tabs get their own cookies and storage, are never written to disk, and are wiped when you close them. Screenshots are blocked, and you can lock them behind your fingerprint or a PIN.
+  - icon: tabs
+    title: Tabs that stay tidy
+    body: A grid of tabs you can drag to reorder, swipe to close and gather into coloured groups. Tabs you aren't using sleep to save memory, and a closed tab comes back with one tap.
+  - icon: reader
+    title: Reader view and read aloud
+    body: Strip a page down to its text, with themes and text size you choose, or have it read aloud. Save pages to read offline, or print them as a PDF.
+  - icon: bookmark
+    title: Bookmarks, history and backups
+    body: Bookmarks, a searchable history, a reading list and downloads. Import or export bookmarks as HTML, or back everything up to a file you keep, encrypted with a password if you like.
+  - icon: ai
+    title: Optional AI, with your own key
+    body: Add an OpenAI key to summarise a page, ask a question about it, or explain the text you selected. Off until you do, and never used in private tabs.
+screenshots:
+  - src: /apps/browsepocket/screens/home.webp
+    alt: BrowsePocket new tab page with the address bar and pinned sites
+  - src: /apps/browsepocket/screens/page.webp
+    alt: A web page in BrowsePocket with the address bar and the blocking shield
+  - src: /apps/browsepocket/screens/reader.webp
+    alt: An article in BrowsePocket's reader view with its theme and text controls
+  - src: /apps/browsepocket/screens/tabs.webp
+    alt: The BrowsePocket tab switcher with a coloured tab group and other tabs
+privacy:
+  account: false
+  ads: false
+  internet: true
+  storage: On this phone. Private tabs are never written to disk
+  export: Export bookmarks as HTML, or back up to a file you keep
+privacyPolicy: ./browsepocket/privacy.md
+released: null
+faqs:
+  - q: Does BrowsePocket need an account?
+    a: No. There is no account, no sync, no ads and no analytics. Your tabs, bookmarks and history stay on your phone, and SouMoster never receives them.
+  - q: Which engine does it use?
+    a: Android System WebView, the same engine Chrome uses, kept up to date by Google Play. Sites work as they do in Chrome, and security fixes arrive through the Play Store without an app update.
+  - q: Who can see what I browse?
+    a: The sites you visit, as with any browser, and your search engine when you search. DuckDuckGo is the default. Search suggestions are off until you turn them on. Safe Browsing checks pages against Google's lists of dangerous sites, and you can turn it off in Settings. SouMoster sees nothing.
+  - q: How private are private tabs?
+    a: They use their own cookies, storage and cache, separate from your normal tabs. Nothing from them goes into history or onto disk, and everything is deleted when the last private tab closes. Screenshots are blocked while one is on screen.
+  - q: Does hiding cookie banners accept cookies?
+    a: No. BrowsePocket hides the pop-up and clicks nothing, so the site never gets your consent. Third-party cookies are blocked either way.
+  - q: Does BrowsePocket use AI?
+    a: Only if you add your own OpenAI key in Settings. Summarise and Ask send the page's text and title, plus your question. Explain sends the text you selected and the page's title. Nothing is sent from private tabs or in the background, and SouMoster never receives the key or the text.
+  - q: Can I make it my default browser?
+    a: Yes. BrowsePocket offers this when you first open it, or you can choose it later in Android's default apps settings. Links from other apps then open in a new tab.
+---
+
+BrowsePocket is a web browser built for privacy. It blocks ads and trackers from the first page, hides cookie banners without accepting them, and keeps everything you do on your phone. It's the window to the web for the Pocket family.
+
+There is no account and there are no ads, and a site only gets your camera, microphone or location if it asks and you allow it. Send a page to NotesPocket, open a downloaded PDF in ReadPocket, or start a search from the home-screen widget.
+
+The app is still in development, so there is no Play button on this page yet.
